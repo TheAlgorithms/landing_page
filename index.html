@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Algorithms - Open Source resource for learning Data Structures & Algorithms implementations in various programming languages">
+    <meta name="keywords" content="algorithms, data structures, programming, open source, learning, computer science">
+    <title>The Algorithms - Learn Data Structures & Algorithms</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">
+                    <img  alt="The Algorithms Logo">
+                    <span>The Algorithms</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Resources <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#languages">Programming Languages</a></li>
+                            <li><a href="#algorithms">Algorithms</a></li>
+                            <li><a href="#contribute">How to Contribute</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="https://discord.gg/mnQfzktNu9" class="discord-btn" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        Join Discord
+                    </a>
+                    <button class="github-btn" onclick="window.open('https://github.com/TheAlgorithms', '_blank')">
+                        <i class="fab fa-github"></i>
+                        Star on GitHub
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Learn Algorithms & Data Structures</h1>
+                <p>Open source resource for learning algorithms and their implementation in any programming language</p>
+                <div class="cta-buttons">
+                    <a href="#languages" class="btn primary">Explore Languages</a>
+                    <a href="https://github.com/TheAlgorithms" class="btn secondary">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About The Algorithms</h2>
+                <div class="about-content">
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-code-branch"></i>
+                            <h3>30+</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-star"></i>
+                            <h3>250k+</h3>
+                            <p>Total Stars</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <h3>100k+</h3>
+                            <p>Members & Contributors</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-code"></i>
+                            <h3>1000+</h3>
+                            <p>Algorithms</p>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="lead">The Algorithms is the largest open-source algorithm library on GitHub, backed by an active community of developers worldwide.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Clear, well-documented implementations in multiple programming languages</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Beginner-friendly explanations and step-by-step guides</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Active community support and code reviews</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Educational resources for computer science students</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Regular updates and maintenance by expert developers</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Cross-platform compatibility and optimized implementations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages" class="languages">
+            <div class="container">
+                <h2>Programming Languages</h2>
+                <div class="language-grid">
+                    <div class="language-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <p>199k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/Python" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                        <p>61k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/Java" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>28k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/JavaScript" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-golang"></i>
+                        <h3>Go</h3>
+                        <p>13k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/Go" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-rust"></i>
+                        <h3>Rust</h3>
+                        <p>12k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/Rust" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-cpp"></i>
+                        <h3>C++</h3>
+                        <p>25k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/C-Plus-Plus" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-c"></i>
+                        <h3>C</h3>
+                        <p>15k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/C" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-swift"></i>
+                        <h3>Swift</h3>
+                        <p>4k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/Swift" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-php"></i>
+                        <h3>PHP</h3>
+                        <p>3k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/PHP" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fab fa-r-project"></i>
+                        <h3>R</h3>
+                        <p>2k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/R" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Scala</h3>
+                        <p>1k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/Scala" class="btn">Explore</a>
+                    </div>
+                    <div class="language-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Julia</h3>
+                        <p>1k+ Stars</p>
+                        <a href="https://github.com/TheAlgorithms/Julia" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="algorithms" class="algorithms">
+            <div class="container">
+                <h2>Popular Algorithm Categories</h2>
+                <div class="algo-grid">
+                    <div class="algo-card">
+                        <i class="fas fa-sort"></i>
+                        <h3>Sorting Algorithms</h3>
+                        <ul>
+                            <li>Bubble Sort</li>
+                            <li>Quick Sort</li>
+                            <li>Merge Sort</li>
+                            <li>Heap Sort</li>
+                            <li>Insertion Sort</li>
+                            <li>Selection Sort</li>
+                            <li>Radix Sort</li>
+                            <li>Shell Sort</li>
+                        </ul>
+                        <a href="https://github.com/TheAlgorithms/Algorithms-Explanation/tree/master/en/Sorting" class="algo-link">Learn More →</a>
+                    </div>
+                    <div class="algo-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Searching Algorithms</h3>
+                        <ul>
+                            <li>Binary Search</li>
+                            <li>Linear Search</li>
+                            <li>Jump Search</li>
+                            <li>Interpolation Search</li>
+                            <li>Exponential Search</li>
+                            <li>Fibonacci Search</li>
+                            <li>Ternary Search</li>
+                        </ul>
+                        <a href="https://github.com/TheAlgorithms/Algorithms-Explanation/tree/master/en/Searching" class="algo-link">Learn More →</a>
+                    </div>
+                    <div class="algo-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Graph Algorithms</h3>
+                        <ul>
+                            <li>Dijkstra's Algorithm</li>
+                            <li>Breadth First Search</li>
+                            <li>Depth First Search</li>
+                            <li>Bellman Ford</li>
+                            <li>Floyd Warshall</li>
+                            <li>Kruskal's Algorithm</li>
+                            <li>Prim's Algorithm</li>
+                            <li>A* Pathfinding</li>
+                        </ul>
+                        <a href="https://github.com/TheAlgorithms/Algorithms-Explanation/tree/master/en/Graphs" class="algo-link">Learn More →</a>
+                    </div>
+                    <div class="algo-card">
+                        <i class="fas fa-tree"></i>
+                        <h3>Data Structures</h3>
+                        <ul>
+                            <li>Binary Trees</li>
+                            <li>Linked Lists</li>
+                            <li>Hash Tables</li>
+                            <li>Stacks & Queues</li>
+                            <li>AVL Trees</li>
+                            <li>Red-Black Trees</li>
+                            <li>Heaps</li>
+                            <li>Tries</li>
+                        </ul>
+                        <a href="https://github.com/TheAlgorithms/Algorithms-Explanation/tree/master/en/Data%20Structures" class="algo-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contribute" class="contribute">
+            <div class="container">
+                <h2>How to Contribute</h2>
+                <div class="contribute-grid">
+                    <div class="contribute-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Fork & Clone</h3>
+                        <p>Start by forking the repository of your chosen programming language and clone it locally.</p>
+                    </div>
+                    <div class="contribute-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Implement</h3>
+                        <p>Add your algorithm implementation following our coding guidelines and documentation standards.</p>
+                    </div>
+                    <div class="contribute-card">
+                        <i class="fas fa-vial"></i>
+                        <h3>Test</h3>
+                        <p>Ensure your code works correctly by adding appropriate test cases.</p>
+                    </div>
+                    <div class="contribute-card">
+                        <i class="fas fa-paper-plane"></i>
+                        <h3>Submit</h3>
+                        <p>Create a pull request with your changes and wait for review from our maintainers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="twitter-feed">
+            <div class="container">
+                <h2>Latest from Twitter</h2>
+                <div class="twitter-grid">
+                    <div class="twitter-timeline">
+                        <a class="twitter-timeline" 
+                           data-height="500" 
+                           data-theme="light" 
+                           href="https://twitter.com/the_algorithms?ref_src=twsrc%5Etfw">
+                           Tweets by The Algorithms
+                        </a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="twitter-content">
+                        <h3>Stay Connected</h3>
+                        <p>Follow us on Twitter for:</p>
+                        <ul>
+                            <li>Latest algorithm implementations</li>
+                            <li>Community updates</li>
+                            <li>Learning resources</li>
+                            <li>Contribution opportunities</li>
+                        </ul>
+                        <a href="https://twitter.com/the_algorithms" class="btn primary" target="_blank">
+                            <i class="fab fa-twitter"></i> Follow @the_algorithms
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="community">
+            <div class="container">
+                <h2>Join Our Community</h2>
+                <div class="community-grid">
+                    <div class="community-info">
+                        <div class="community-stats">
+                            <div class="stat">
+                                <h3>6k+</h3>
+                                <p>Discord Members</p>
+                            </div>
+                            <div class="stat">
+                                <h3>1000+</h3>
+                                <p>Contributors</p>
+                            </div>
+                            <div class="stat">
+                                <h3>100K+</h3>
+                                <p>Monthly Views</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/TheAlgorithms" class="social-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://twitter.com/the_algorithms" class="social-btn">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                            <a href="https://www.linkedin.com/company/thealgorithms" class="social-btn">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://discord.gg/mnQfzktNu9" class="social-btn">
+                                <i class="fab fa-discord"></i> Discord
+                            </a>
+                            <a href="mailto:hello@the-algorithms.com" class="social-btn">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discord-widget">
+                        <iframe src="https://discord.com/widget?id=808045925556682782&theme=dark" 
+                            width="350" height="500" 
+                            allowtransparency="true" 
+                            frameborder="0" 
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="container">
+                <h2>Our Team</h2>
+                <p class="section-lead">Meet the amazing people behind The Algorithms</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/3709715" alt="vbrazo">
+                        <h3>vbrazo</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/vbrazo" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/2181644" alt="AkarshSatija">
+                        <h3>Akarsh Satija</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/AkarshSatija" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/2809468" alt="xuri">
+                        <h3>xuri</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/xuri" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/3096325" alt="anirudhmurali">
+                        <h3>Anirudh Murali</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/anirudhmurali" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/1292556" alt="cclauss">
+                        <h3>Christian Clauss</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/cclauss" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/4058717" alt="wesllhey">
+                        <h3>wesllhey</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/wesllhey" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/4143778" alt="tapaswenipathak">
+                        <h3>Tapasweni Pathak</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/tapaswenipathak" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/6513121" alt="alexpantyukhin">
+                        <h3>Alex Pantyukhin</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/alexpantyukhin" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/6756180" alt="kassane">
+                        <h3>kassane</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/kassane" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/6849438" alt="himanshu-dixit">
+                        <h3>Himanshu Dixit</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/himanshu-dixit" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/7642654" alt="andreicioban">
+                        <h3>Andrei Cioban</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/andreicioban" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/7780269" alt="Erfaniaa">
+                        <h3>Erfan Alimohammadi</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Erfaniaa" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/7821757" alt="AnshulMalik">
+                        <h3>Anshul Malik</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/AnshulMalik" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/9781788" alt="saurabhjn76">
+                        <h3>Saurabh Jain</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/saurabhjn76" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/10573038" alt="AnupKumarPanwar">
+                        <h3>Anup Kumar Panwar</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/AnupKumarPanwar" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/11409973" alt="cozek">
+                        <h3>cozek</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/cozek" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/11682032" alt="mrvnmchm">
+                        <h3>mrvnmchm</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/mrvnmchm" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/14276147" alt="harshildarji">
+                        <h3>Harshil Darji</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/harshildarji" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/14369357" alt="dynamitechetan">
+                        <h3>Chetan Kaushik</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/dynamitechetan" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://avatars.githubusercontent.com/u/14837478" alt="DravitLochan">
+                        <h3>Dravit Lochan</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/DravitLochan" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-cta">
+                    <a href="https://github.com/orgs/TheAlgorithms/people" class="btn primary" target="_blank">
+                        View All Team Members
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h4>The Algorithms</h4>
+                    <p>Open Source resource for learning DSA.</p>
+                    <p class="footer-description">Join our community of open source developers and learn and share implementations for algorithms and data structures in various languages. Learn, share, and grow with us.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#languages">Programming Languages</a></li>
+                            <li><a href="#algorithms">Algorithms</a></li>
+                            <li><a href="#contribute">How to Contribute</a></li>
+                            <li><a href="https://github.com/TheAlgorithms/Algorithms-Explanation">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="https://github.com/TheAlgorithms">GitHub</a></li>
+                            <li><a href="https://discord.gg/mnQfzktNu9">Discord</a></li>
+                            <li><a href="https://twitter.com/the_algorithms">Twitter</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Algorithms. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
